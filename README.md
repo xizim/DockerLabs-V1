@@ -5,7 +5,7 @@
 <img src="https://xiz-blog.oss-cn-shenzhen.aliyuncs.com/typecho/2019/01/28/468084185966661/docker.gif" alt="dockerlabs" >
 
 <h3>环境要求</h3>
-<p>使用了赛邮云发送短信号码，需要自己去申请appid和appkey填写到app_config.php文件中</p>
+<p>使用了赛邮云发送短信号码，需要自己去申请appid和appkey填写到app_config.php文件中。需要修改所有html文件和api/kill.php中的接口调用地址</p>
 <li>php7</li>
 <li>nginx</li>
 <li>docker</li>
