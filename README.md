@@ -27,7 +27,7 @@ $ systemctl daemon-reload  && systemctl restart docker
 ```
 
 <li>3.拉取基础镜像(或者自己在本地build镜像)</li>
-* 请参考[https://github.com/xizim/docker-ttyd](https://github.com/xizim/docker-ttyd)
+请参考https://github.com/xizim/docker-ttyd
 <h3>API结构说明</h3>
 
 <li>api/config.php --- 数据库配置</li>
