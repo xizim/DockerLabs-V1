@@ -18,7 +18,7 @@
 <h3>节点初始化配置</h3>
 <li>1.安装docker</li>
 <li>2.开启API</li>
-### 1. Prepare passwordless SSH login
+
 ```bash
 $ systemctl show --property=FragmentPath docker </br>
 $ vi /lib/systemd/system/docker.service  </br>
