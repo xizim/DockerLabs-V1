@@ -1,7 +1,8 @@
 # DockerLabs-V1
 
 <p>游客可通过web页面直接创建出NAT容器，本项目从发布后将不再维护任何bug，以后有时间会出sdk重构版。</p>
-![avatar](https://xiz-blog.oss-cn-shenzhen.aliyuncs.com/typecho/2019/01/28/468084185966661/docker.gif)
+
+<img src="https://xiz-blog.oss-cn-shenzhen.aliyuncs.com/typecho/2019/01/28/468084185966661/docker.gif" alt="dockerlabs" >
 
 <h3>环境要求</h3>
 <p>使用了赛邮云发送短信号码，需要自己去申请appid和appkey填写到app_config.php文件中</p>
@@ -17,12 +18,14 @@
 <h3>节点初始化配置</h3>
 <li>1.安装docker</li>
 <li>2.开启API</li>
-<code>
+### 1. Prepare passwordless SSH login
+```bash
 $ systemctl show --property=FragmentPath docker </br>
 $ vi /lib/systemd/system/docker.service  </br>
 ExecStart=/usr/bin/dockerd -H unix:///var/run/docker.sock -H tcp://0.0.0.0:1117  </br>
 $ systemctl daemon-reload  && systemctl restart docker
-</code>
+```
+
 <li>3.拉取基础镜像(或者自己在本地build镜像)</li>
 >请参考[https://github.com/xizim/docker-ttyd](https://github.com/xizim/docker-ttyd "https://github.com/xizim/docker-ttyd")
 
