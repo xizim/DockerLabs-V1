@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<title>容实验 - 猫云计算,Docker实验室,在线真实环境,高效学习Linux</title>
+
+	<meta name="author" content="容实验" />
+	<meta name="description" content="容实验:基于docker打造的云上实验室，现已支持centos/ubuntu/debian操作系统" />
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600" />
+
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="plugins/font-awesome/css/all.css" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/ic-helpers.min.css" />
+</head>
+<body>
+
+
+
+
+	<!-- Content -->
+	<div class="content-home">
+		<div class="container m-t-100 m-b-100">
+			<div class="row m-b-70">
+				<div class="col-sm-8">
+					<h1 class="text-xs-center">Neko Docker Labs</h1>
+				</div>
+
+
+				<div class="clearfix"></div>
+
+				<div class="separator-one"></div>
+			</div>
+
+			<div class="row m-b-70">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="product-banner">
+						<div class="product-banner-wrapper">
+							<h2 class="text-white" style="font-size: 20px;">免费创建你的实验环境！</h2>
+							<p class="text-white" id="count"></p>
+							<p class="text-white m-b-30">基于docker打造的云上实验室，现已支持centos/ubuntu/debian操作系统</p>
+
+                            <a href="http://wpa.qq.com/msgrd?v=3&uin=1512214905&site=qq&menu=yes" class="btn btn-success"><i class="fab fa-qq"></i>&nbsp; 联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="panel">
+						<div class="panel-body p-t-30 p-b-30 text-center">
+							<div class="badge-sale-primary">官方节点</div>
+                            <div id="fr1-centos"><div style=" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #999; text-transform: uppercase; border: 1px solid #999; padding: 5px 10px;">状态:获取中</div></div>
+							<a href="centos.html" class="product-item">
+								<img src="img/iso/centos.png" class="img-responsive center-block" alt="" />
+							</a>
+
+							<a href="centos.html">
+								<h5 class="m-tb-20">CentOS</h5>
+							</a>
+							<h6>本节点由CloudNeko提供</h6>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="panel">
+						<div class="panel-body p-t-30 p-b-30 text-center">
+						<div class="badge-sale-primary">官方节点</div>
+                          <div id="fr1-ubuntu"><div style=" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #999; text-transform: uppercase; border: 1px solid #999; padding: 5px 10px;">状态:获取中</div></div>
+							<a href="ubuntu.html" class="product-item">
+								<img src="img/iso/ubuntu.png" class="img-responsive center-block" alt="" />
+							</a>
+
+							<a href="ubuntu.html">
+								<h5 class="m-tb-20">Ubuntu</h5>
+							</a>
+							<h6>本节点由CloudNeko提供</h6>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="panel">
+						<div class="panel-body p-t-30 p-b-30 text-center">
+						<div class="badge-sale-primary">官方节点</div>
+                          <div id="fr1-debian"><div style=" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #999; text-transform: uppercase; border: 1px solid #999; padding: 5px 10px;">状态:获取中</div></div>
+							<a href="debian.html" class="product-item">
+								<img src="img/iso/debian.png" class="img-responsive center-block" alt="" />
+							</a>
+
+							<a href="debian.html">
+								<h5 class="m-tb-20">Debian</h5>
+							</a>
+							<h6>本节点由CloudNeko提供</h6>
+						</div>
+					</div>
+				</div>
+              
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="panel">
+						<div class="panel-body p-t-30 p-b-30 text-center">
+						<div class="badge-sale-primary">官方节点</div>
+                          <div id="fr1"></div>
+							<a href="#" class="product-item">
+								<img src="img/iso/docker.png" class="img-responsive center-block" alt="" />
+							</a>
+
+							<a href="#">
+								<h5 class="m-tb-20">指定镜像(正在开发)</h5>
+							</a>
+							<h6>可使用公开的镜像创为容器</h6>
+						</div>
+					</div>
+				</div>
+              
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="panel">
+						<div class="panel-body p-t-30 p-b-30 text-center">
+						<div class="badge-sale-primary">官方节点</div>
+							<a href="#" class="product-item">
+								<img src="img/iso/ing.png" class="img-responsive center-block" alt="" />
+							</a>
+
+							<a href="#">
+								<h5 class="m-tb-20">私有仓库(正在开发)</h5>
+							</a>
+							<h6>可使用私有仓库中公开的镜像创为容器</h6>
+						</div>
+					</div>
+				</div>
+              
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="panel">
+						<div class="panel-body p-t-30 p-b-30 text-center">
+						<div class="badge-sale-primary">官方节点</div>
+							<a href="#" class="product-item">
+								<img src="img/iso/ing.png" class="img-responsive center-block" alt="" />
+							</a>
+
+							<a href="#">
+								<h5 class="m-tb-20">常用服务(正在开发)</h5>
+							</a>
+							<h6>本节点由CloudNeko提供</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+				<div class="col-sm-12 footer-line"></div>
+
+				<div class="col-sm-12 m-t-10">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 text-xs-center">
+								<p>&copy; 2015-2019 <a href="#">CloudNeko</a>. All rights reserved.</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+	</div>
+	<!-- Content -->
+
+	
+
+	<script src="plugins/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+	<script src="js/global.js"></script>
+<script>
+  $.post("http://labs.cloudneko.com/api/GetCount.php","",function(data, xhr) {
+     var obj = eval(data);
+     document.getElementById("count").innerHTML ="已创建过"+obj.count+"次容器";
+   },"json")
+    $.get("http://labs.cloudneko.com/api/GetNodeStatus.php?nodename=suqian1","",function(data, xhr) {
+     var obj = eval(data);
+    if(obj.status=="ok")
+    {
+      document.getElementById("fr1-centos").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #4f8e4b; text-transform: uppercase; border: 1px solid #4f8e4b; padding: 5px 10px; \">状态:正常</div>";
+      document.getElementById("fr1-ubuntu").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #4f8e4b; text-transform: uppercase; border: 1px solid #4f8e4b; padding: 5px 10px; \">状态:正常</div>";
+      document.getElementById("fr1-debian").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #4f8e4b; text-transform: uppercase; border: 1px solid #4f8e4b; padding: 5px 10px; \">状态:正常</div>";
+    }
+     else
+     {
+       document.getElementById("fr1-centos").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #ff0500; text-transform: uppercase; border: 1px solid #ff0500; padding: 5px 10px; \">状态:宕机</div>";
+       document.getElementById("fr1-ubuntu").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #ff0500; text-transform: uppercase; border: 1px solid #ff0500; padding: 5px 10px; \">状态:宕机</div>";
+       document.getElementById("fr1-debian").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #ff0500; text-transform: uppercase; border: 1px solid #ff0500; padding: 5px 10px; \">状态:宕机</div>";
+     }
+   },"json")
+function Get(){ 
+  $.post("http://labs.cloudneko.com/api/GetCount.php","",function(data, xhr) {
+     var obj = eval(data);
+     document.getElementById("count").innerHTML ="已创建过"+obj.count+"次容器";
+   },"json")
+}
+function fr1status(){ 
+  $.get("http://labs.cloudneko.com/api/GetNodeStatus.php?nodename=suqian1","",function(data, xhr) {
+     var obj = eval(data);
+    if(obj.status=="ok")
+    {
+      document.getElementById("fr1-centos").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #4f8e4b; text-transform: uppercase; border: 1px solid #4f8e4b; padding: 5px 10px; \">状态:正常</div>";
+      document.getElementById("fr1-ubuntu").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #4f8e4b; text-transform: uppercase; border: 1px solid #4f8e4b; padding: 5px 10px; \">状态:正常</div>";
+      document.getElementById("fr1-debian").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #4f8e4b; text-transform: uppercase; border: 1px solid #4f8e4b; padding: 5px 10px; \">状态:正常</div>";
+    }
+     else
+     {
+       document.getElementById("fr1-centos").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #ff0500; text-transform: uppercase; border: 1px solid #ff0500; padding: 5px 10px; \">状态:宕机</div>";
+       document.getElementById("fr1-ubuntu").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #ff0500; text-transform: uppercase; border: 1px solid #ff0500; padding: 5px 10px; \">状态:宕机</div>";
+       document.getElementById("fr1-debian").innerHTML ="<div style=\" position: absolute; top: 10px; /* left: 25px; */ right: 25px; font-size: 11px; color: #ff0500; text-transform: uppercase; border: 1px solid #ff0500; padding: 5px 10px; \">状态:宕机</div>";
+     }
+   },"json")
+} 
+  var get = window.setInterval("Get()",5000); 
+  var status = window.setInterval("fr1status()",10000); 
+
+  </script>
+</body>
+</html>
+

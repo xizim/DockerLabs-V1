@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<title>Ubuntu - 容实验</title>
+
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+    <script type="text/javascript" src="http://labs.cloudneko.com/js/spin.min.js" ></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600" />
+
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="plugins/font-awesome/css/all.css" />
+	<link rel="stylesheet" href="plugins/bxslider/bxslider.min.css" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/ic-helpers.min.css" />
+ <script type="text/javascript">        
+        var opts = {            
+            lines: 13, 
+            length: 20, 
+            width: 10, 
+            radius: 30,
+            corners: 1, 
+            rotate: 0, 
+            direction: 1, 
+            color: '#793f86', 
+            speed: 1.4, 
+            trail: 60, 
+            shadow: false, 
+            hwaccel: false,        
+            className: 'spinner',
+            zIndex: 2e9, 
+            top: '300px',
+            left: 'auto'
+        };
+var spinner = new Spinner(opts);
+        
+    </script>
+</head>
+<body>
+<div id="firstDiv">
+    </div>
+
+
+	<!-- Content -->
+	<div class="content-right">
+		<div class="container-fluid">
+			<div class="row">
+
+
+				<div class="col-xs-12 col-sm-12 col-md-7 diy-100">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 m-b-70">
+							<div class="row">
+								<div class="col-sm-8">
+									<h1 class="text-xs-center">Ubuntu</h1>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 m-tb-100">
+									
+
+								<h2>配置</h2>
+									<div class="form-group form-group-default required">
+									<label>核心(CPU)</label>
+									<select name="cpu" id="cpu" class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+									</div>
+									<div class="form-group form-group-default required">
+									<label>内存(MB)</label>
+									<select name="memory" id="memory" class="form-control">
+										<option value="512">512</option>
+										<option value="256">256</option>
+										<option value="128">128</option>
+										<option value="1024">1024</option>
+                                        <option value="2048">2048</option>
+									</select>
+									</div>
+								<div class="form-group form-group-default required">
+									<label>开放端口</label>
+									<input type="text" name="inport" id="inport" class="form-control" required="" value="80">
+								</div>
+									<div class="form-group form-group-default required">
+									<label>使用时长</label>
+									<select name="uestime" id="uestime" class="form-control">
+										<option value="1">1</option>
+										<option value="12">12</option>
+										<option value="24">24</option>
+                                        <option value="48">48</option>
+									</select>
+									</div>
+
+									<h2>选择版本</h2>
+
+									<div class="m-b-20">
+									<div class="form-group form-group-default required">
+									<label>发行版本</label>
+									<select name="version" id="version" class="form-control">
+                                        <option value="hub.hjh365.cn/library/ubuntu:19.04">19.04</option>
+										<option value="hub.hjh365.cn/library/ubuntu:18.10">18.10</option>
+                                        <option value="hub.hjh365.cn/library/ubuntu:18.04">18.04</option>
+                                        <option value="hub.hjh365.cn/library/ubuntu:16.04">16.04</option>
+                                        <option value="hub.hjh365.cn/library/ubuntu:14.04">14.04</option>
+                                        <option value="hub.hjh365.cn/library/ubuntu:12.04">12.04</option>
+									</select>
+									</div>
+									</div>
+									<h2>验证</h2><div class="form-group form-group-default required">
+									<label>使用码</label>
+									<input type="text" name="code" id="code" class="form-control" required="" value="9981">
+								</div>
+                                  <div class="form-group form-group-default required">
+									<label>手机号码</label>
+									<input type="text" name="phone" id="phone" class="form-control" required="">
+								</div>
+                                  <div class="form-group form-group-default required">
+									<label>手机验证码</label>
+									<input type="text" name="smscode" id="smscode" class="form-control" required="">
+                                 <div id="sendcode">   <a href="javascript:void(0);" onclick="sendcode()"><i class="fas fa-envelope" ></i>&nbsp; 点击获取验证码</a></div>
+								</div>
+									<a  href="javascript:void(1);" onclick="Go()" class="btn btn-success"><i class="fas fa-cube"></i>&nbsp; 创建容器</a>
+									<a href="index.html" class="btn btn-success"><i class="fas fa-home"></i>&nbsp; 返回首页</a>
+								</div>
+
+								
+
+	<script src="plugins/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="plugins/bxslider/bxslider.min.js"></script>
+
+	<script src="js/global.js"></script>
+     <script>
+       function sendcode() {
+  var phone = $("#phone").val();
+  document.getElementById("sendcode").innerHTML ="";
+  var sms = {
+   phone: phone
+  }
+        $.post("http://labs.cloudneko.com/api/sms.php",sms,function(data, xhr) {
+          var obj = eval(data);
+          if(obj.status=="success")
+          {
+            document.getElementById("sendcode").innerHTML ="<p><i class=\"fas fa-envelope\" ></i>&nbsp; 已发送</p>";
+          }
+          else
+          {
+            if(obj.status=="error2" || obj.status=="error")
+            {
+              alert("发送失败，请检查您的手机号码是否正确");
+              document.getElementById("sendcode").innerHTML =" <a href=\"javascript:void(0);\" onclick=\"sendcode()\"><i class=\"fas fa-envelope\" ></i>&nbsp; 点击获取验证码</a>";
+            }
+            if(obj.status=="error3")
+            {
+              alert("发送次数超过限制，请在30分钟后重试");
+            }
+            if(obj.status=="error4")
+            {
+              alert("发送过于频繁，请在5分钟后重试");
+            }
+          }
+      }, "json")
+  
+       }
+function Go() {
+    var cpu = $("#cpu").val();
+    var memory = $("#memory").val();
+    var inport = $("#inport").val();
+    var outport ="";
+    var sshport="";
+  	var version = $("#version").val();
+  	var uestime = $("#uestime").val();
+    var code = $("#code").val();
+    var nodename="suqian1";
+    var smscode = $("#smscode").val();
+  $.post("http://labs.cloudneko.com/api/Getport.php","",function(data, xhr) {
+    var obj = eval(data);
+      var postparams = {
+        cpu: cpu,
+        memory: memory,
+        inport: inport,
+        outport: obj.outport,
+        sshport: obj.sshport,
+        version: version,
+        uestime: uestime,
+        code: code,
+        nodename: nodename,
+        smscode: smscode
+    };
+     $("#firstDiv").text("");
+     var target = $("#firstDiv").get(0);
+     spinner.spin(target);
+     $.get("http://labs.cloudneko.com/api/create.php",postparams,function(data, xhr) {
+       var createmgs=eval(data);
+       if(createmgs.status=="ok")
+       {
+          window.location.href = "http://labs.cloudneko.com/done.php?outport="+obj.outport;
+       }
+       if(createmgs.status=="error1")
+       {
+          alert("使用码无效");
+          spinner.spin();
+       }
+       if(createmgs.status=="error2")
+       {
+          alert("验证码无效");
+         spinner.spin();
+       }
+      }, "json")
+
+    }, "json")
+}
+       </script>
+</body>
+</html>
+

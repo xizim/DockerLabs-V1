@@ -1,0 +1,178 @@
+/* Boostrap Extra-Small Size - Mobile */
+@media (max-width: 767px) {
+	.content-right {
+		left: 0;
+	}
+
+	.menu-right-btn,
+	.side-nav .cart-side-btn {
+		top: 25px;
+		right: 25px;
+	}
+
+	.side-nav .cart-side-btn .badge {
+		position: absolute;
+		margin-top: 20px;
+		margin-left: -19px;
+		font-size: 11px;
+		background-color: transparent;
+	}
+
+	.side-nav .account-side-btn {
+		top: 25px;
+		right: 100px;
+	}
+
+	.side-nav .home-side-btn {
+		top: 25px;
+		right: 175px;
+	}
+
+	.side-nav ul {
+		margin: 100px 50px 0 60px;
+	}
+
+	.side-nav ul li {
+		margin-bottom: 15px;
+	}
+
+	.social-media-box {
+		margin: auto 25px;
+		bottom: 25px;
+	}
+
+	.carousel-indicators {
+		width: 60%;
+		bottom: 20px;
+	}
+
+	.carousel-caption h1 {
+		font-size: 30px;
+	}
+
+	.carousel-caption p {
+		font-size: 20px;
+	}
+
+	.block-map {
+		height: 300px;
+	}
+
+	table thead {
+		display: none;
+	}
+
+	table tbody td,
+	table tfoot td {
+		display: block !important;
+		padding: .6rem !important;
+		text-align: center !important;
+	}
+
+	table tbody tr td:nth-child(2) {
+		background: #fff;
+	}
+
+	.product-banner-wrapper {
+		width: auto;
+		right: 0;
+		padding: 0 20px;
+	}
+
+	.blog-container {
+		padding-right: 15px;
+		padding-bottom: 70px;
+	}
+
+	.team-box {
+		margin-bottom: 20px;
+	}
+
+	.team-box h3,
+	.team-box p {
+		font-size: 12px;
+	}
+
+	.team-box h3 {
+		font-weight: 600;
+	}
+
+	.product-img-wrapper {
+		position: initial;
+		padding: 0;
+		margin: 0;
+	}
+
+	.bx-wrapper .bx-controls-auto,
+	.bx-wrapper .bx-pager {
+		bottom: -40px;
+	}
+
+	.vertical-col {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+	.recommended-text {
+		position: unset;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.video-height {
+		height: 200px !important;
+	}
+}
+
+
+/* Boostrap Small Size - Tablet (portrait) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.search-input {
+		font-size: 45px;
+	}
+
+	.product-banner-wrapper {
+		width: auto;
+		right: 0;
+		left: 0;
+		padding: 0 50px;
+	}
+
+	.product-img-wrapper {
+		position: initial;
+		padding: 0;
+		margin: 0;
+	}
+
+	.bx-wrapper .bx-controls-auto,
+	.bx-wrapper .bx-pager {
+		bottom: -40px;
+	}
+
+	.recommended-text {
+		font-size: 15px;
+	}
+
+	.video-height {
+		height: 360px !important;
+	}
+}
+
+
+/* Boostrap Small Size - Tablet (landscape) */
+@media (min-width: 992px) and (max-width: 1024px) {
+	.result-info {
+		margin-top: 10px;
+	}
+
+	.recommended-text {
+		font-size: 15px;
+	}
+
+	.video-height {
+		height: 360px !important;
+	}
+}
